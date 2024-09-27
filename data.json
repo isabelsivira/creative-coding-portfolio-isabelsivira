@@ -1,27 +1,32 @@
 [
   {
-    "file": "project/firstWeek1",
+    "file": "experiments/firstWeek1.js",
     "name": "Metro de Caracas",
     "description": "This project aims to map out the Metro lines in Caracas using Perlin noise to draw dots that will map out the metro lines. As a reference I used an artwork published in the Gorilla Sun Newsletter."
   },
   {
-    "file": "project/firstWeek2",
+    "file": "experiments/firstWeek2.js",
     "name": "Metro de Caracas",
-    "description": "This is the first variation where I traslated the canvas so it looks like the lines are horizontal."
+    "description": "This is the first variation where I translated the canvas so it looks like the lines are horizontal."
   },
   {
-    "file": "project/firstWeek3",
+    "file": "experiments/firstWeek3.js",
     "name": "Metro de Caracas",
     "description": "This is the second variation of the first week's artwork and I used lines to connect the dots do they look like the metro lines are connected."
   },
   {
-    "file": "project/galaxy",
+    "file": "experiments/galaxy.js",
     "name": "Galaxy",
     "description": "This week's experiment is a galaxy created using Gravitational attraction, insppired by the examples presented in Garrit's lecture about complexity."
   },
   {
-    "file": "project/solarSystem",
-    "name": "Traffic",
+    "file": "experiments/solarSystem.js",
+    "name": "The Sun",
     "description": "This one is the second variation of the galaxy and is supposed to look like a solar system where there are planets and moons for each of the planets."
+  },
+  {
+    "file": "experiments/traffic.js",
+    "name": "Traffic",
+    "description": "This is an additional variation of the galaxy and is supposed to mimmic traffic using a flow field. The triangles represent the vehicles of different sizes and the roads are the flow fields. "
   }
 ]
