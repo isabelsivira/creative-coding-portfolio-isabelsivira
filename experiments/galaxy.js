@@ -1,5 +1,5 @@
 //Code adapted from example code in the Complexity slides
-//Class created with the help of Claude ai
+//This code was created with the assistance of Claude.ai
 class CelestialBody {
     constructor(x, y, mass) {
       this.position = createVector(x, y);

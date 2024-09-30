@@ -25,8 +25,6 @@ function goToExperiment(index) {
   }
   p5container.innerHTML = "";
 
-  
-
   const iframe = document.createElement("iframe");
   iframe.style.width = "100%";
   iframe.style.height = "100%";
