@@ -34,9 +34,20 @@ p {
 }
 
 #p5container {
-  grid-row: 1 / 4;
-  grid-column: 1 / 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: white;
+  z-index: 0;
+}
+
+#p5container canvas {
+  z-index: 0 !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
 }
 
 header {
