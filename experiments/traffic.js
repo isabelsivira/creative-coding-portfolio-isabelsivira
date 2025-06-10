@@ -1,3 +1,6 @@
+// Used the code from the Vehicle example and modified it to create a traffic simulation.
+// Used this code as a reference for the flow field: https://editor.p5js.org/ada10086/sketches/r1gmVaE07
+
 class Vehicle {
     constructor(x, y) {
       this.position = createVector(x, y);

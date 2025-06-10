@@ -1,5 +1,4 @@
 // Conway's Game of Life with color evolution
-// This code was created with the assistance of Claude.ai
 
 let grid;
 let cols;

@@ -1,6 +1,6 @@
 // Rainbow Conway's Game of Life
 // This code was created with the assistance of ChatGPT
-
+// Used the code from the Game of Life example and modified it to use rainbow colors and different shapes using this as a reference: https://p5js.org/examples/shapes-and-color-shape-primitives/
 let grid;
 let cols;
 let rows;
@@ -105,4 +105,59 @@ function draw() {
         };
       } else {
         nextGrid[i][j] = {
-          al
+          alive: state,
+          color: grid[i][j].color,
+          shape: grid[i][j].shape
+        };
+      }
+    }
+  }
+  
+  grid = nextGrid;
+}
+
+function drawStar(x, y, radius1, radius2, npoints) {
+  let angle = TWO_PI / npoints;
+  let halfAngle = angle / 2.0;
+  beginShape();
+  for (let a = 0; a < TWO_PI; a += angle) {
+    let sx = x + cos(a) * radius2;
+    let sy = y + sin(a) * radius2;
+    vertex(sx, sy);
+    sx = x + cos(a + halfAngle) * radius1;
+    sy = y + sin(a + halfAngle) * radius1;
+    vertex(sx, sy);
+  }
+  endShape(CLOSE);
+}
+
+function countNeighbors(x, y) {
+  let sum = 0;
+  for (let i = -1; i < 2; i++) {
+    for (let j = -1; j < 2; j++) {
+      if (i === 0 && j === 0) continue;
+      
+      let col = (x + i + cols) % cols;
+      let row = (y + j + rows) % rows;
+      sum += grid[col][row].alive ? 1 : 0;
+    }
+  }
+  return sum;
+}
+
+function mousePressed() {
+  // Add new cells on click
+  let col = floor(mouseX / cellSize);
+  let row = floor(mouseY / cellSize);
+  if (col >= 0 && col < cols && row >= 0 && row < rows) {
+    grid[col][row].alive = true;
+    grid[col][row].color = rainbowColors[currentColorIndex];
+    grid[col][row].shape = floor(random(4));
+  }
+}
+
+function windowResized() {
+  resizeCanvas(innerWidth, innerHeight);
+  cols = floor(width / cellSize);
+  rows = floor(height / cellSize);
+} 

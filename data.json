@@ -46,7 +46,7 @@
     "description": "This code simulates Conway's Game of Life on a 2D grid, where each cell updates its state based on the number of live neighbors using simplified rules. The number of living cells also controls a sine wave oscillator's frequency and amplitude for an audio-visual effect."
   },
   {
-    "file": "experiments/rainbowSoundLife.js",
+    "file": "experiments/rainbowLife.js",
     "name": "Rainbow Game of Life",
     "description": "This is a variation of the Game of Life using diffeerent shapes, like stars, triangles and diamonds as the cells and a rainbow color palette."
   },
